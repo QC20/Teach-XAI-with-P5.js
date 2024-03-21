@@ -1,8 +1,6 @@
 // Jonas Kjeldmand Jensen, April 2024
-// Teacihng 
-
-// Jonas Kjeldmand Jensen, April 2024
-// Teaching 
+// Teaching non-linear Gradient Descent intuitively through 
+// the P5.js framework
 
 let x_vals = [];
 let y_vals = [];
