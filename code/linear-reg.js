@@ -10,7 +10,7 @@ let b = 0;
 const learningRate = 0.05;
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(800, 600);
 }
 
 function loss(pred, label) {
