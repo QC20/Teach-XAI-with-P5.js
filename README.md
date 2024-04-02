@@ -14,6 +14,27 @@ Linear gradient descent refers to the optimization process used to minimize the 
 
 On the other hand, non-linear gradient descent tackles optimization in scenarios where the relationship between inputs and outputs is non-linear. In our P5.js visualization, students will witness a more intricate descent pattern, navigating through valleys and peaks in the error landscape. Encourage students to recognize that non-linear gradient descent requires more sophisticated strategies and may be prone to getting stuck in local minima.
 
+#### Brief Explanation of Loss Function (Cost Function)
+**Loss Function (Cost Function):**
+In machine learning, the loss function measures how well the model's predictions match the actual labels in the training data. It quantifies the difference between the predicted values and the actual values. The goal of training a machine learning model is to minimize this loss function.
+
+**Mean Squared Error (MSE):**
+The mean squared error is a common loss function used in regression problems. It calculates the average of the squared differences between the predicted values and the actual values. The formula for MSE is:
+
+MSE = 1/n * ∑(yi - ŷi)^2
+
+where:
+- n is the number of data points.
+- yi is the actual label for the ith data point.
+- ŷi is the predicted value for the ith data point.
+
+**Role of Cost in Gradient Descent:**
+In gradient descent optimization, the algorithm iteratively updates the model parameters (in this case, the coefficients of the quadratic function) to minimize the cost function. The gradients of the cost function with respect to the model parameters are used to update the parameters in the direction that reduces the cost.
+
+
+#### Brief explanation of the Iteration Counter
+In the context of gradient descent optimization, "iterations" refers to the number of times the optimization algorithm updates the model parameters in order to minimize the loss function and improve the model's performance. Each iteration allows the model to better fit the training data and reduce the discrepancy between the predicted and actual values.
+
 ### Teaching Approach
 Utilize the interactive P5.js visualizations in this repository to guide students through the differences between linear and non-linear gradient descent. Encourage exploration and experimentation, allowing students to manipulate parameters and observe how the optimization process unfolds in real-time. By providing hands-on experiences with these concepts, students can develop a deeper understanding of gradient descent algorithms and their implications in machine learning and AI.
 
@@ -25,7 +46,7 @@ Utilize the interactive P5.js visualizations in this repository to guide student
   
 Linear Gradient Descent            |  Non-Linear Gradient Descent
 :-------------------------:|:-------------------------:
-![Linear Gradient Descent](img/lin.png)  |  ![Non-Linear Gradient Descent](img/non-lin.png)
+![Linear Gradient Descent](img/lin-reg.png)  |  ![Non-Linear Gradient Descent](img/non-lin.png)
 
 
 ## Feature Extraction Regression
@@ -53,3 +74,9 @@ Utilize the provided P5.js sketches and ml5.js documentation to guide students t
 
 #### Next Steps:
 Encourage students to explore additional datasets, experiment with different pre-trained models, and integrate feature extraction regression into their own creative projects. By mastering feature extraction regression techniques, students can unlock a wide range of possibilities for applying machine learning in their work.
+
+
+## Neural Networks
+
+<img alt="Image of Neural Netowrk" src="img\dog-cat.gif" title="Imagine sending 3 features of an animal through a neural network and it predicts how likely it is a dog or cat." />
+Imagine sending 3 features of an animal through a neural network and it predicts how likely it is a dog or cat.

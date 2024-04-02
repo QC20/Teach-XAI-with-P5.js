@@ -3,13 +3,16 @@
 
 let x_vals = [];
 let y_vals = [];
-let m = 0;
+let m = 1;
 let b = 0;
+let cost = 0;
+let iterations = 0;
 
 const learningRate = 0.05;
 
 function setup() {
   createCanvas(800, 600);
+  frameRate(50); // cap off frame rate to slow down iterations
 }
 
 function loss(pred, label) {
@@ -30,14 +33,18 @@ function mousePressed() {
 
 function gradientDescent() {
   const n = x_vals.length;
+  let totalError = 0;
   for (let i = 0; i < n; i++) {
     const x = x_vals[i];
     const y = y_vals[i];
     const guess = predict(x);
     const error = guess - y;
+    totalError += loss(guess, y);
     m -= (2 / n) * error * x * learningRate;
     b -= (2 / n) * error * learningRate;
   }
+  cost = totalError / n;
+  iterations++;
 }
 
 function draw() {
@@ -48,7 +55,15 @@ function draw() {
     drawLine();
     drawPoints();
   }
+  
+  fill(255);
+  textSize(20);
+  text(`m: ${m.toFixed(2)}`, 20, 40);
+  text(`b: ${b.toFixed(2)}`, 20, 70);
+  text(`Cost: ${cost.toFixed(2)}`, 20, 100);
+  text(`Iterations: ${iterations}`, 20, 130);
 }
+
 function drawPoints() {
   // Disable anti-aliasing
   noSmooth();
