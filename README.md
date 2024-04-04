@@ -5,6 +5,35 @@ This repository is dedicated to empowering learners to explore the fascinating r
 Whether you're a student eager to delve into AI ethics, an educator seeking resources to teach XAI principles, or a developer looking to enhance transparency in AI applications, this repository offers a variety of resources, tutorials, and interactive examples to support your journey. This repository is organized to showcase interactive visualizations designed to facilitate learning and foster intuitive understanding of artificial intelligence (AI) models through creative coding. Each visualization simulates a lecturer guiding a class, providing hands-on demonstrations and explanations to help learners grasp the concepts behind AI algorithms in an engaging and accessible manner.
 Whether you're a student eager to delve into AI ethics, an educator seeking resources to teach XAI principles, or a developer looking to enhance transparency in AI applications, this repository offers a variety of resources, tutorials, and interactive examples to support your journey.
 
+### Quick Setup of p5.js and ml5.js
+If you're familiar with [p5.js](https://p5js.org/), ml5.js has been designed to play very nicely with p5. You can use the following boilerplate code to get started:
+
+In an index.html file, copy and paste the following and open up that file in your web browser.
+
+```html
+<h2>Example of code</h2>
+
+<pre>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Getting Started with ml5.js</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- p5 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+    <!-- ml5 -->
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+  </head>
+
+  <body>
+    <main>
+    </main>
+    <script src="sketch.js"></script>
+  </body>
+</html>
+</pre>
+```
 
 ## Understanding Linear vs. Non-linear Gradient Descent
 As a teacher looking to elucidate the nuances of gradient descent to your students, leveraging interactive visualizations can greatly enhance comprehension. In the realm of Explainable AI (XAI), P5.js provides a powerful platform to demonstrate key concepts such as linear and non-linear gradient descent.
