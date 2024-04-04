@@ -11,7 +11,7 @@ If you're familiar with [p5.js](https://p5js.org/), ml5.js has been designed to 
 In an index.html file, copy and paste the following and open up that file in your web browser.
 
 ```html
-<h2>Example of code</h2>
+<h2>Example of what an index.html file should look like</h2>
 
 <pre>
 <!DOCTYPE html>
