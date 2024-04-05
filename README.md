@@ -78,11 +78,8 @@ Linear Gradient Descent            |  Non-Linear Gradient Descent
 ![Linear Gradient Descent](img/lin-reg.png)  |  ![Non-Linear Gradient Descent](img/non-lin.png)
 
 
-## Feature Extraction Regression
-In the realm of machine learning, feature extraction plays a pivotal role in understanding and extracting meaningful patterns from data. Feature extraction regression, a technique offered by libraries like ml5.js, allows us to harness pre-trained models to extract features from data and perform regression tasks.
-
-#### What is Feature Extraction Regression?
-Feature extraction regression involves utilizing pre-trained models, such as MobileNet, to extract features from input data, which are then used as input to a regression model. This approach enables us to leverage the learned representations of the pre-trained model to perform regression tasks on various types of data, including images and video streams.
+## Feature Extraction Regression \& Image Classification
+In the realm of machine learning, feature extraction plays a pivotal role in understanding and extracting meaningful patterns from data. Feature extraction regression, a technique offered by libraries like ml5.js, allows us to harness pre-trained models to extract features from data and perform regression tasks and distinguish between different images or objects. Feature extraction regression involves utilizing pre-trained models, such as MobileNet, to extract features from input data, which are then used as input to a regression model. This approach enables us to leverage the learned representations of the pre-trained model to perform regression tasks on various types of data, including images and video streams.
 
 #### Getting Started:
 To explore feature extraction regression with P5.js, we'll utilize the ml5.js library, which provides an intuitive interface for integrating machine learning models into creative projects. Through a series of interactive visualizations and hands-on exercises, students can gain a deeper understanding of feature extraction regression and its applications.
@@ -100,6 +97,19 @@ Utilize the provided P5.js sketches and ml5.js documentation to guide students t
 - **Data Collection**: Collect training data by capturing images or video frames and associating them with corresponding numerical values.
 - **Training Process**: Train the regression model using collected data and monitor the training progress to ensure optimal performance.
 - **Visualization**: Visualize regression results using P5.js to provide insights into the model's predictions and performance.
+
+## Two Models: Feature Extraction Regression and Image Classification
+When exploring the provided code examples, it's essential to recognize the distinct tasks and functionalities they represent:
+
+- **Feature Extraction Regression**: In the first code example, the focus is on performing regression tasks by extracting features from video frames using the MobileNet model. This approach predicts numerical values based on the extracted features, enabling tasks such as image regression or real-time video stream regression.
+
+- **Image Classification with MobileNet**: Conversely, the second code example revolves around image classification using the MobileNet model. Here, the model categorizes images into predefined classes, such as "happy" or "sad," allowing users to train and save the model for later use.
+
+By understanding these differences, students can grasp the diverse applications and functionalities offered by feature extraction regression and image classification techniques, empowering them to choose the most suitable approach for their projects.
+
+Linear Gradient Descent            |  Non-Linear Gradient Descent
+:-------------------------:|:-------------------------:
+![Linear Gradient Descent](img/lin-reg.png)  |  ![Non-Linear Gradient Descent](img/non-lin.png)
 
 #### Next Steps:
 Encourage students to explore additional datasets, experiment with different pre-trained models, and integrate feature extraction regression into their own creative projects. By mastering feature extraction regression techniques, students can unlock a wide range of possibilities for applying machine learning in their work.
