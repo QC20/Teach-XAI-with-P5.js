@@ -123,5 +123,9 @@ Encourage students to explore additional datasets, experiment with different pre
 
 ## Neural Networks
 
-<img alt="Image of Neural Netowrk" src="img\dog-cat.gif" title="Imagine sending 3 features of an animal through a neural network and it predicts how likely it is a dog or cat." />
-Imagine sending 3 features of an animal through a neural network and it predicts how likely it is a dog or cat.
+<p align="center">
+  <img src="img/dog-cat.gif" alt="Image of Neural Netowrk" width="75%" height="75%">
+</p>
+<p align="center">
+  Imagine sending 3 features of an animal through a neural network and it predicts how likely it is a dog or cat.
+</p>
