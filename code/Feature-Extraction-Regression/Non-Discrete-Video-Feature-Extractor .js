@@ -1,7 +1,9 @@
-// Feature Extractor Regression
-// A Beginner's Guide to Machine Learning with ml5.js
-// Jonas Kjeldmand Jensen - April 2024
-// Source: https://youtu.be/aKgq0m1YjvQ
+/* 
+  Jonas Kjeldmand Jensen
+  April 2024
+  
+  Non-Discrete Video Feature Extractor 
+*/
 
 // Variables to store ml5 models, video feed, and UI elements
 let mobilenet; // MobileNet model for feature extraction

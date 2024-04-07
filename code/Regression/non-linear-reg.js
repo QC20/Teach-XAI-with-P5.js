@@ -1,10 +1,9 @@
-// Jonas Kjeldmand Jensen, April 2024
-// Teaching non-linear Gradient Descent intuitively through the P5.js framework
-
 let x_vals = [];
 let y_vals = [];
 let coef = [0, 0, 0]; // Coefficients for quadratic function: y = ax^2 + bx + c
 const learningRate = 0.05;
+let iterations = 0;
+let cost = 0; // Variable to store the cost value
 
 function setup() {
   createCanvas(800, 600);
@@ -28,26 +27,38 @@ function mousePressed() {
 
 function gradientDescent() {
   const n = x_vals.length;
+  let totalError = 0; // Variable to accumulate total error for calculating cost
   for (let i = 0; i < n; i++) {
     const x = x_vals[i];
     const y = y_vals[i];
     const guess = predict(x);
     const error = guess - y;
+    totalError += loss(guess, y); // Accumulate error for each data point
     // Gradient descent for quadratic function coefficients
     coef[0] -= (2 / n) * error * x * x * learningRate;
     coef[1] -= (2 / n) * error * x * learningRate;
     coef[2] -= (2 / n) * error * learningRate;
   }
+  cost = totalError / n; // Calculate cost by dividing total error by the number of data points
 }
 
 function draw() {
   background(0);
 
-  if (x_vals.length > 0) {
+  if (x_vals.length > 0 && iterations < 100000) {
     gradientDescent();
     drawCurve();
     drawPoints();
+    iterations++;
   }
+  
+  fill(255);
+  textSize(20);
+  text(`a: ${coef[0].toFixed(2)}`, 20, 40);
+  text(`b: ${coef[1].toFixed(2)}`, 20, 70);
+  text(`c: ${coef[2].toFixed(2)}`, 20, 100);
+  text(`Cost: ${cost.toFixed(2)}`, 20, 130); // Display the cost value
+  text(`Iterations: ${iterations}`, 20, 160); // Display the number of iterations
 }
 
 function drawPoints() {
