@@ -4,6 +4,9 @@ This repository is dedicated to empowering learners to explore the fascinating r
 
 Whether you're a student eager to delve into AI ethics, an educator seeking resources to teach XAI principles, or a developer looking to enhance transparency in AI applications, this repository offers a variety of resources, tutorials, and interactive examples to support your journey.
 
+#### What is P5.js?
+p5.js is a dynamic JavaScript library tailored for creative coding endeavors. Stemming from the renowned Processing framework, known for its emphasis on creative coding, p5.js inherits its essence. Primarily designed to facilitate novice programmers in crafting interactive, graphical applications, Processing endeavors to render programming languages more accessible through visualization. What sets Processing apart is its inclusive approach, welcoming not only developers but also artists, designers, researchers, and anyone keen on exploring the art of creation.
+
 
 ## Understanding Linear vs. Non-linear Gradient Descent
 As a teacher looking to elucidate the nuances of gradient descent to your students, leveraging interactive visualizations can greatly enhance comprehension. In the realm of Explainable AI (XAI), P5.js provides a powerful platform to demonstrate key concepts such as linear and non-linear gradient descent.
