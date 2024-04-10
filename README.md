@@ -107,9 +107,9 @@ When exploring the provided code examples, it's essential to recognize the disti
 
 By understanding these differences, students can grasp the diverse applications and functionalities offered by feature extraction regression and image classification techniques, empowering them to choose the most suitable approach for their projects.
 
-Linear Gradient Descent            |  Non-Linear Gradient Descent
+Feature Extraction Regression (non-discrete classification)           |  Image Classification (discrete classification)
 :-------------------------:|:-------------------------:
-![Linear Gradient Descent](img/lin-reg.png)  |  ![Non-Linear Gradient Descent](img/non-lin.png)
+![Feature Extraction Regression]()  |  ![Image Classification]()
 
 #### Next Steps:
 Encourage students to explore additional datasets, experiment with different pre-trained models, and integrate feature extraction regression into their own creative projects. By mastering feature extraction regression techniques, students can unlock a wide range of possibilities for applying machine learning in their work.
@@ -119,3 +119,27 @@ Encourage students to explore additional datasets, experiment with different pre
 
 <img alt="Image of Neural Netowrk" src="img\dog-cat.gif" title="Imagine sending 3 features of an animal through a neural network and it predicts how likely it is a dog or cat." />
 Imagine sending 3 features of an animal through a neural network and it predicts how likely it is a dog or cat.
+
+
+### Exploring Neural Networks with Interactive Visualizations
+Neural networks are powerful computational models inspired by the human brain's interconnected neurons. They excel at learning complex patterns and relationships from data, making them fundamental to various machine learning tasks. In this section, we'll delve into neural networks through interactive visualizations using P5.js, allowing you to gain insights into their inner workings and how weights affect their behavior.
+
+1. **Model Initialization**: The code initializes a neural network model using ml5.js, defining its inputs, outputs, and task (classification). This step sets the stage for training the model to classify data points based on their features.
+
+2. **Data Collection**: Through mouse interactions, you can collect training data points by clicking on the canvas. Each data point is associated with a target label ('C', 'D', or 'E'), representing different classes. This process simulates the collection of labeled data for training the neural network.
+
+3. **Training the Model**: Once the training data is collected, you can initiate the training process by pressing the 't' key. The model undergoes training epochs, adjusting its internal weights to minimize prediction errors and improve classification accuracy.
+
+4. **Prediction and Visualization**: After training, the model enters the prediction state, where it can classify new data points based on their features. The visualizations update in real-time, showcasing the model's classification decisions and the impact of weights on its behavior.
+
+#### Key Insights:
+
+- **Effect of Weights**: By observing how the neural network classifies data points, you can gain insights into how its internal weights influence decision-making. Experiment with different training epochs and target labels to observe changes in the model's behavior.
+
+- **Interactive Learning**: The interactive nature of the visualization allows for intuitive exploration of neural networks. Visual feedback, such as the sound generated based on classification results, enhances understanding and engagement.
+
+- **Training Dynamics**: Monitor the training process through console logs, observing the training epochs and loss values. Understanding the dynamics of model training provides valuable insights into the optimization process and convergence behavior.
+
+#### Next Steps:
+
+Explore further by adjusting parameters such as the number of training epochs, the choice of activation functions, or the network architecture. Additionally, consider extending the visualization to visualize activation functions, decision boundaries, or training dynamics in more detail.
