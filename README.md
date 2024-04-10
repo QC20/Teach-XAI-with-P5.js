@@ -5,6 +5,12 @@ This repository is dedicated to empowering learners to explore the fascinating r
 Whether you're a student eager to delve into AI ethics, an educator seeking resources to teach XAI principles, or a developer looking to enhance transparency in AI applications, this repository offers a variety of resources, tutorials, and interactive examples to support your journey. This repository is organized to showcase interactive visualizations designed to facilitate learning and foster intuitive understanding of artificial intelligence (AI) models through creative coding. Each visualization simulates a lecturer guiding a class, providing hands-on demonstrations and explanations to help learners grasp the concepts behind AI algorithms in an engaging and accessible manner.
 Whether you're a student eager to delve into AI ethics, an educator seeking resources to teach XAI principles, or a developer looking to enhance transparency in AI applications, this repository offers a variety of resources, tutorials, and interactive examples to support your journey.
 
+#### What is P5.js?
+p5.js is a dynamic JavaScript library tailored for creative coding endeavors. Stemming from the renowned Processing framework, known for its emphasis on creative coding, p5.js inherits its essence. Primarily designed to facilitate novice programmers in crafting interactive, graphical applications, Processing endeavors to render programming languages more accessible through visualization. What sets Processing apart is its inclusive approach, welcoming not only developers but also artists, designers, researchers, and anyone keen on exploring the art of creation.
+
+#### What is P5.js?
+p5.js is a dynamic JavaScript library tailored for creative coding endeavors. Stemming from the renowned Processing framework, known for its emphasis on creative coding, p5.js inherits its essence. Primarily designed to facilitate novice programmers in crafting interactive, graphical applications, Processing endeavors to render programming languages more accessible through visualization. What sets Processing apart is its inclusive approach, welcoming not only developers but also artists, designers, researchers, and anyone keen on exploring the art of creation.
+
 ### Quick Setup of p5.js and ml5.js
 If you're familiar with [p5.js](https://p5js.org/), ml5.js has been designed to play very nicely with p5. You can use the following boilerplate code to get started:
 
@@ -115,14 +121,15 @@ Feature Extraction Regression (non-discrete classification)           |  Image C
 Encourage students to explore additional datasets, experiment with different pre-trained models, and integrate feature extraction regression into their own creative projects. By mastering feature extraction regression techniques, students can unlock a wide range of possibilities for applying machine learning in their work.
 
 
-## Neural Networks
-
-<img alt="Image of Neural Netowrk" src="img\dog-cat.gif" title="Imagine sending 3 features of an animal through a neural network and it predicts how likely it is a dog or cat." />
-Imagine sending 3 features of an animal through a neural network and it predicts how likely it is a dog or cat.
-
-
 ### Exploring Neural Networks with Interactive Visualizations
 Neural networks are powerful computational models inspired by the human brain's interconnected neurons. They excel at learning complex patterns and relationships from data, making them fundamental to various machine learning tasks. In this section, we'll delve into neural networks through interactive visualizations using P5.js, allowing you to gain insights into their inner workings and how weights affect their behavior.
+
+<p align="center">
+  <img src="img/dog-cat.gif" alt="Image of Neural Netowrk" width="75%" height="75%">
+</p>
+<p align="center">
+  Imagine sending 3 features of an animal through a neural network and it predicts how likely it is a dog or cat.
+</p>
 
 1. **Model Initialization**: The code initializes a neural network model using ml5.js, defining its inputs, outputs, and task (classification). This step sets the stage for training the model to classify data points based on their features.
 
