@@ -1,0 +1,79 @@
+
+html, body {
+    height: 100%;
+  }
+  
+  body {
+    background-color: #F7F3E9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+    
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    overflow: hidden;
+  }
+      
+  .container .title {
+    animation-delay: 1s;
+    max-width: 300px;
+  }
+  
+  @media (max-width: 720px) {
+    .container .title {
+      display: none;
+      visibility: hidden;
+    }
+  }
+  
+  .container .title h1 {
+    font-family: Oswald, sans-serif;
+    font-weight: 300;
+    line-height: 0.1;
+    font-size: 28pt;
+  }
+  
+  .container .title h2 {
+    font-family: Raleway, sans-serif;
+    font-weight: 200;
+    font-size: 14pt;
+  }
+  
+  .container .title h3 {
+    font-family: Raleway, sans-serif;
+    font-weight: 100;
+    font-size: 11pt;
+    line-height: 2;
+  }
+  
+  .container #p5sketch {
+    margin: 40px;
+    height: 75vmin;
+    max-height: 360px;
+    width: 75vmin;
+    max-width: 360px;
+  }
+  
+  .container .txt {
+    animation-delay: 2.8s;
+  }
+  
+  @media (max-width: 1024px) {
+    .container .txt {
+      display: none;
+      visibility: hidden;
+    }
+  }
+  
+  .container .txt p {
+    max-width: 360px;
+    font-family: Raleway, sans-serif;
+    font-size: 11pt;
+    text-align: left;
+  }
+  
