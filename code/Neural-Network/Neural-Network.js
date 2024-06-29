@@ -40,7 +40,6 @@ function setup() {
   wave.freq(440);
   wave.amp(env);
 
-
 }
 
 function mousePressed() {
