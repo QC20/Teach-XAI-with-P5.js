@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Visualization</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        #description, #canvas-container {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        #description {
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        #canvas-container {
+            height: 600px;
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        #buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        button, #return-btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #444444;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        button:hover, #return-btn:hover {
+            background-color: #333333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Network Visualization</h1>
+
+    <div id="description">
+        This visualization demonstrates a dynamic network of interconnected nodes. It creates a 3D space filled with nodes and connections, simulating data flow through the network. The animation showcases concepts like node connectivity, data transmission, and network structure.
+
+        Key features:
+        - 3D network visualization
+        - Dynamic node connections
+        - Simulated data flow
+        - Interactive resizing
+
+        Instructions:
+        - Use the Reset button to restart the visualization
+        - Resize the window to see how the network adapts
+        - Observe the flowing data points and node connections
+    </div>
+
+    <div id="canvas-container">
+        <canvas id="c"></canvas>
+    </div>
+
+    <div id="buttons">
+        <button onclick="resetVisualization()">Reset</button>
+        <a href="https://qc20.github.io/Teach-XAI-with-P5.js/" id="return-btn">Return</a>
+    </div>
+
+    <script src="sketch.js"></script>
+    <script>
+        var c = document.getElementById('c');
+        var ctx = c.getContext('2d');
+
+        function resizeCanvas() {
+            c.width = c.offsetWidth;
+            c.height = c.offsetHeight;
+            if (typeof opts !== 'undefined') {
+                opts.vanishPoint.x = c.width / 2;
+                opts.vanishPoint.y = c.height / 2;
+                opts.depth = Math.max(c.width, c.height) / 2;
+                opts.focalLength = Math.max(c.width, c.height) / 2;
+            }
+        }
+
+        function resetVisualization() {
+            resizeCanvas();
+            if (typeof init === 'function') {
+                init();
+            }
+        }
+
+        window.addEventListener('resize', resizeCanvas);
+        
+        // Initial setup
+        resizeCanvas();
+        if (typeof init === 'function') {
+            init();
+        }
+
+        // Remove the click event listener that was causing auto-restart
+        window.removeEventListener('click', init);
+    </script>
+</body>
+</html>
