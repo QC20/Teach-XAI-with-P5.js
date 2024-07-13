@@ -1,11 +1,3 @@
-/*
-  Jonas Kjeldmand Jensen
-  April 2024
-
-  Bullseye visualization showing how noise and bias works
-
-*/
-
 // Declare global variables
 let b, n, N, bSlider, nSlider, bx, by, newbx, newby, aButton;
 
@@ -24,15 +16,20 @@ function setup() {
   
   // Initialize variables
   N = 20;
+  
+  // Create and position Bias slider
   bSlider = createSlider(0, 5, 2.5, 0.5);
   bSlider.input(biasCycle);
-  bSlider.position(0, height-26);
+  bSlider.position(width/2 - 220, height - 50);
+  
+  // Create and position Noise slider
   nSlider = createSlider(0, 5, 3, 0.5);
   nSlider.input(noiseSetNew);
-  nSlider.position(width-138, height-26);
+  nSlider.position(width/2 + 20, height - 50);
   
+  // Create and position Toggle Annotation button
   aButton = createButton("Toggle Annotation");
-  aButton.position(width-130, 4);
+  aButton.position(width/2 - 60, height - 30);
   aButton.mousePressed(toggleAnnotation);
   
   biasCycle();
@@ -48,9 +45,11 @@ function setup() {
 // Function called when the window is resized
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
-  bSlider.position(0, height-26);
-  nSlider.position(width-138, height-26);
-  aButton.position(width-130, 4);
+  
+  // Update positions of sliders and button
+  bSlider.position(width/2 - 220, height - 50);
+  nSlider.position(width/2 + 20, height - 50);
+  aButton.position(width/2 - 60, height - 30);
 }
 
 // Toggle annotation display on button click
@@ -114,9 +113,10 @@ function noiseDraw() {
 function annotateSliders() {
   fill(0);
   noStroke();
-  textSize(24);
-  text("Bias", 8, height-30);
-  text("Noise", width-130, height-30);
+  textSize(16);
+  textAlign(CENTER, CENTER);
+  text("Bias", width/2 - 220, height - 70);
+  text("Noise", width/2 + 20, height - 70);
 }
 
 // Draw the target circles
