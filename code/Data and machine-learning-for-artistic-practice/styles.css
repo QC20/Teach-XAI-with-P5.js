@@ -1,0 +1,15 @@
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  letter-spacing: 15px;
+  font-size: 5vmin;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  color: white;
+  // text-shadow: 0 0 5px #DD69F9, 0 0 10px #DD69F9, 0 0 10px #DD69F9, 0 0 70px #DD69F9;
+  opacity: 0.9;
+}

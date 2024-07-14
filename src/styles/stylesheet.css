@@ -76,4 +76,12 @@ html, body {
     font-size: 11pt;
     text-align: left;
   }
-  
+
+  .custom-link {
+    color: inherit; /* Inherits the color from the parent element */
+    text-decoration: none; /* Removes the underline */
+}
+
+.custom-link:hover {
+    text-decoration: underline; /* Adds underline on hover */
+}
